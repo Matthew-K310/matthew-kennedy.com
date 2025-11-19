@@ -1,0 +1,36 @@
+#+TITLE: A Greeting
+#+DATE: 2025100912021760029332
+#+options: html-link-use-abs-url:nil html-postamble:auto html-preamble:t
+#+options: html-scripts:nil html-style:t html5-fancy:nil tex:t
+#+html_doctype: xhtml-strict
+#+html_container: div
+#+html_content_class: content
+#+description:
+#+keywords:
+#+html_link_home:
+#+html_link_up:
+#+html_mathjax:
+#+html_equation_reference_format: \eqref{%s}
+#+html_head: <link rel="stylesheet" href="https://matthew-kennedy.com/other/site.css" type="text/css" />
+#+html_head_extra:
+#+subtitle:
+#+infojs_opt:
+#+creator: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.2 (<a href="https://orgmode.org">Org</a> mode 9.7.31)
+#+latex_header:
+
+To anyone reading this: *Welcome!*
+
+I've been toying with the idea of starting a blog for a while, but I never quite knew where to start-so I kept putting it off.
+
+Well, I’ve started.
+
+I have a simple plan for this: to make it my social media replacement. I really, truly dislike the way modern social media has been going for a while now, but I still enjoy keeping up with people I don’t often get to see in person.
+
+This blog will be a place for TILs (see [[https://github.com/jbranchaud/til][Josh Branchaud's TIL repo]]), micro-blogging, and longer posts. The longer posts will most likely come from lesson plans or other larger notes and projects. I’m planning to take a month-long deep dive into Biblical canonization, so expect to see that sometime next month.
+
+Thank you for indulging me-and I'll see you in the next one.
+
+God bless,
+
+Matthew
+
