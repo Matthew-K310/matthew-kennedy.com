@@ -14,7 +14,7 @@ draft = false
 
 The general look and feel of the application (running on Arch Linux (btw) under Hyprland) is like a MacOS lite. 
 
-The traffic light controls are in the top right corner, which reminds me a lot of the KDE or Cinnamon Mac themes.
+The traffic light controls are in the top right corner, which reminds me a lot of the KDE or Cinnamon Mac themes, [like this one](https://store.kde.org/p/1398837).
 
 ### Writing Workflow {#writing-workflow}
 
