@@ -6,15 +6,8 @@
     <description>Recent content on Blog | Matthew Kennedy.com</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Oct 2025 17:05:17 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Oct 2025 12:02:17 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Setting up a file share for media links</title>
-      <link>http://localhost:1313/posts/2025-10-10-setting-up-a-file-share-server-with-caddy/</link>
-      <pubDate>Fri, 10 Oct 2025 17:05:17 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-10-10-setting-up-a-file-share-server-with-caddy/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;While I was hanging out in the vt100 chat room (see &lt;a href=&#34;https://xn--gckvb8fzb.com/contact/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://xn&amp;ndash;gckvb8fzb.com/contact/&lt;/a&gt;), a friend of mine shared an image link with a domain I hadn’t seen before.&lt;/p&gt;&#xA;&lt;p&gt;Curious, I asked about it - and he explained that he has a file share set up that’s just an SFTP server made accessible through &lt;strong&gt;Caddy&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;As someone who enjoys self-hosting as much as possible, I decided to set up something similar myself.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>A Greeting</title>
       <link>http://localhost:1313/posts/2025-10-09-a-greeting/</link>

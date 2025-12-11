@@ -10,6 +10,9 @@ pagerSize = 20
 [markup.highlight]
 style = "github-dark"
 
+[outputs]
+home = ["HTML", "RSS"]
+
 [params]
   author = "Matthew Kennedy"
   # info = "AV and Programming Hobbyist"

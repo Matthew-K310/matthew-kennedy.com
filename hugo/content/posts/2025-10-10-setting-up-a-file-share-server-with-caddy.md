@@ -25,11 +25,9 @@ I already have an **NGINX Proxy Manager (NPM)** instance running inside an **LXC
 
 I set up **Caddy** to host the root directory of my SFTP server on port 80 and pointed **NPM** to the local IP address at that port.
 
-{{< figure src="other/assets/20251010/20251010_171223.png" alt="Screenshot" width="80%" >}}
+
 
 Then I added my existing SSL certificate within **NPM**.
-
-{{< figure src="other/assets/20251010/20251010_171228.png" alt="SSL settings" width="80%" >}}
 
 
 ## <span class="org-todo todo TODO">TODO</span> Add File Config Blocks {#add-file-config-blocks}
@@ -53,7 +51,7 @@ Once everything was configured, I just needed to upload something to the server 
 
 Now, when I navigate to the IP address or domain in my browser, I can copy the link to the file and share it with whoever I please.
 
-> <https://files.matthewcloud.us/very_important_file.mp4>
+<https://files.matthewcloud.us/very_important_file.mp4>
 
 
 ## Performance and Future Plans {#performance-and-future-plans}
