@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Exit on error
 set -e
 
@@ -14,7 +13,6 @@ RELEASES_DIR="/home/deploy/releases"
 DEPLOY_BIN="/home/deploy/production/website"
 SERVICE_NAME="site"
 BINARY_NAME="website-${COMMIT_HASH}"
-declare -a PORTS=("3000" "1313")
 
 # Check if the binary exists
 if [ ! -f "${RELEASES_DIR}/${BINARY_NAME}" ]; then
@@ -42,12 +40,10 @@ rollback_deployment() {
 	# wait to restart the services
 	sleep 10
 
-	# Restart all services with the previous binary
-	for port in "${PORTS[@]}"; do
-		SERVICE="${SERVICE_NAME}@${port}.service"
-		echo "Restarting $SERVICE..."
-		sudo systemctl restart $SERVICE
-	done
+	# Restart service with the previous binary
+	SERVICE="${SERVICE_NAME}.service"
+	echo "Restarting $SERVICE..."
+	sudo systemctl restart $SERVICE
 
 	echo "Rollback completed."
 }
@@ -57,16 +53,15 @@ echo "Promoting ${BINARY_NAME} to ${DEPLOY_BIN}..."
 ln -sf "${RELEASES_DIR}/${BINARY_NAME}" "${DEPLOY_BIN}"
 
 WAIT_TIME=5
+
 restart_service() {
-	local port=$1
-	# local SERVICE="${SERVICE_NAME}@${port}.service"
 	local SERVICE="${SERVICE_NAME}.service"
+
 	echo "Restarting ${SERVICE}..."
 
 	# Restart the service
 	if ! sudo systemctl restart "$SERVICE"; then
 		echo "Error: Failed to restart ${SERVICE}. Rolling back deployment."
-
 		# Call the rollback function
 		rollback_deployment
 		exit 1
@@ -79,7 +74,6 @@ restart_service() {
 	# Check the status of the service
 	if ! systemctl is-active --quiet "${SERVICE}"; then
 		echo "Error: ${SERVICE} failed to start correctly. Rolling back deployment."
-
 		# Call the rollback function
 		rollback_deployment
 		exit 1
@@ -88,8 +82,6 @@ restart_service() {
 	echo "${SERVICE}.service restarted successfully."
 }
 
-# for port in "${PORTS[@]}"; do
-# 	restart_service $port
-# done
+restart_service
 
 echo "Deployment completed successfully."
