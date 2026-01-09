@@ -44,8 +44,8 @@ jobs:
       - name: Deploy binary using SCP
         env:
           USER: deploy
-          HOST: zenbin-vps
-          DIR: /home/deploy/releases
+          HOST: matthew-kennedy.com
+          DIR: /home/deploy/releases 
           DEPLOY_SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
         run: |
           mkdir -p ~/.ssh
