@@ -1,0 +1,21 @@
+[Unit]
+Description=Site Service
+After=network.target
+
+[Service]
+ExecStart=/home/deploy/production/website-bin
+WorkingDirectory=/home/deploy/production
+User=deploy
+Group=deploy
+LimitNOFILE=65536
+Restart=on-failure
+TimeoutSec=30
+PrivateTmp=true
+ProtectSystem=true
+NoNewPrivileges=true
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
