@@ -3,5 +3,6 @@
 *.log
 *.lock
 tmp/
+hugo/
 
 
