@@ -82,7 +82,15 @@ func Now() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, " the full list.</p></div></section><section><div><h2>Listening</h2></div><div><p>I am a huge music fan, and I've been doing music production off and on since 2020, so music really means a lot to me. These are just a few of the albums I've been enjoying as of late.</p><div><h3>Work & Focus</h3><p>I've been on a huge video game soundtrack kick lately (I blame <a href=\"https://joshuablais.com\">Joshua Blais</a>).</p><ul><li>Age of Empires II: Definitive Edition</li><li>Stellaris OST</li><li>Warhammer 40,000: Rogue Trader OST</li></ul></div><div><h3>Leisure Listening</h3><p>Currently rotating through various artists and genres</p><ul><li>A Wave, Across The Sea - Arcane Roots</li><li>Escape From Solemnace - Matthew Kennedy</li><li>Strange Trails - Lord Huron</li><li>ANYWHERE HERE IS PERFECT - Sam Gellaitry</li></ul></div></div></section><section><div><h2>Learning</h2></div><div><ul><li>The Zig programming language</li><li>American Sign Lanugage</li></ul></div></section><section><div><h2>Watching</h2></div><ul><li>Fallout, Season 2</li><li>Catching up on the WarhammerTV shows</li><li>24, Season 5</li></ul><div></div></section></div></body></html>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, " the full list.</p></div></section><section><div><h2>Listening</h2></div><div><p>I am a huge music fan, and I've been doing music production off and on since 2020, so music really means a lot to me. These are just a few of the albums I've been enjoying as of late.</p><div><h3>Work & Focus</h3><p>I've been on a huge video game soundtrack kick lately (I blame <a href=\"https://joshuablais.com\">Joshua Blais</a>).</p><ul><li>Age of Empires II: Definitive Edition</li><li>Stellaris OST</li><li>Warhammer 40,000: Rogue Trader OST</li></ul></div><div><h3>Leisure Listening</h3><p>Currently rotating through various artists and genres</p><ul><li>A Wave, Across The Sea - Arcane Roots</li><li>Escape From Solemnace - Matthew Kennedy</li><li>Strange Trails - Lord Huron</li><li>ANYWHERE HERE IS PERFECT - Sam Gellaitry</li></ul></div></div></section><section><div><h2>Learning</h2></div><div><ul><li>The Zig programming language</li><li>American Sign Lanugage</li></ul></div></section><section><div><h2>Watching</h2></div><ul><li>Fallout, Season 2</li><li>Catching up on the WarhammerTV shows</li><li>24, Season 5</li></ul><div></div></section></div>")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = components.Footer().Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "</body></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
