@@ -31,7 +31,7 @@ func Photos() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Music | Matthew Kennedy</title><link rel=\"stylesheet\" href=\"../static/css/photos.css\"></head><body>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Music | Matthew Kennedy</title><link rel=\"stylesheet\" href=\"/static/css/photos.css\"></head><body>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -43,7 +43,7 @@ func Photos() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"photo-grid\"><div class=\"photo-container\"><img src=\"../static/assets/vintage-chevy.jpg\" alt=\"Vintage Chevy\"></div><div class=\"photo-container\"><img src=\"../static/assets/green-truck.jpg\" alt=\"Green Truck\"></div><div class=\"photo-container\"><img src=\"../static/assets/sunset-hoop.jpg\" alt=\"Sunset Hoop\"></div></div></body></html>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"photo-grid\"><div class=\"photo-container\"><img src=\"/static/assets/vintage-chevy.jpg\" alt=\"Vintage Chevy\"></div><div class=\"photo-container\"><img src=\"/static/assets/green-truck.jpg\" alt=\"Green Truck\"></div><div class=\"photo-container\"><img src=\"/static/assets/sunset-hoop.jpg\" alt=\"Sunset Hoop\"></div></div></body></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
