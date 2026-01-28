@@ -43,14 +43,14 @@ func Now() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"text-block\"><header><h1>Now</h1></header><section><div><h2>Projects</h2></div><div><ul><li>Creating a website ")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"text-block\"><header><h1>Now</h1></header><p>You should make a <a href=\"https://nownownow.com/\">Now page</a>.</p><section><div><h2>Projects</h2></div><div><ul><li>Creating a website ")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
 		var templ_7745c5c3_Var2 string
 		templ_7745c5c3_Var2, templ_7745c5c3_Err = templ.JoinStringErrs("for")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 27, Col: 34}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 28, Col: 34}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var2))
 		if templ_7745c5c3_Err != nil {
@@ -63,20 +63,20 @@ func Now() templ.Component {
 		var templ_7745c5c3_Var3 string
 		templ_7745c5c3_Var3, templ_7745c5c3_Err = templ.JoinStringErrs("for")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 46, Col: 29}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 47, Col: 29}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var3))
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, " focused study of the first chapter. It's been good - yet odd - so far. More updates to follow.</p></div><div><h3>The Hobbit</h3><p>J.R.R. Tolkien · Fantasy</p><p>This is one of the books I've read the most, having done so around 2-3 dozen times since I was 8 or 9 years old. Tolkien truly was a master of worldbuilding and character development, and I look forward to getting further up and further in.</p></div><p>See my <a href=\"https://blog.matthew-kennedy.com/20260128T0000--reading-list-2026\">2026 reading list</a> ")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, " focused study of the first chapter. It's been good - yet odd - so far. More updates to follow.</p></div><div><h3>The Hobbit</h3><p>J.R.R. Tolkien · Fantasy</p><p>This is one of the books I've read the most, having done so around 2-3 dozen times since I was 8 or 9 years old. Tolkien truly was a master of worldbuilding and character development, and I look forward to getting further up and further in.</p></div><p>See my <a href=\"https://blog.matthew-kennedy.com/posts/20260128t113417--2026-reading-list__blog_reading/\">2026 reading list</a> ")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
 		var templ_7745c5c3_Var4 string
 		templ_7745c5c3_Var4, templ_7745c5c3_Err = templ.JoinStringErrs("for")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 64, Col: 19}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 65, Col: 19}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var4))
 		if templ_7745c5c3_Err != nil {
