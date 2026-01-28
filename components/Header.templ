@@ -1,6 +1,13 @@
 package components
 
 templ Header() {
+	<style>
+	@media (max-width: 768px) {
+		header {
+			display: none;
+		}
+	}
+	</style>
 	<header>
 		<h1 style="margin: 1rem">Matthew Kennedy</h1>
 	</header>
