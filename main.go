@@ -11,6 +11,7 @@ import (
 func main() {
 	// Assuming you have a Home() function in pages package
 	http.Handle("/", templ.Handler(pages.Home()))
+	http.Handle("/now", templ.Handler(pages.Now()))
 	http.Handle("/about", templ.Handler(pages.About()))
 	http.Handle("/micro", templ.Handler(pages.Micro()))
 	http.Handle("/photos", templ.Handler(pages.Photos()))

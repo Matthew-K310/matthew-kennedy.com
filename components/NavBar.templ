@@ -2,56 +2,37 @@ package components
 
 templ NavBar() {
 	<style>
-	body {
-		/* background-color: black; */
-		background-color: #212121;
-		color: white;
-		/* make text visible */
-		font-family: sans-serif;
-		margin: 0;
-		padding: 1rem;
-	}
-
-	h1 {
-		display: flex;
-		text-align: center;
-		justify-content: center;
-	}
-
 	nav {
 		margin: 1rem;
 	}
 
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-	}
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; 
+        gap: 1rem;              
+    }
 
-	ul li {
-		float: none;
-	}
-
-	ul li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
+    .link {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 </style>
 	<nav>
 		<div class="nav-links">
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="https://blog.matthew-kennedy.com">Blog</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/micro">Reel</a></li>
-				<li><a href="/photos">Photos</a></li>
-				<li><a href="/music">Tunes</a></li>
+			<ul class="nav-list">
+				<li><a class="link" href="/">Home</a></li>
+				<li><a class="link" href="https://blog.matthew-kennedy.com">Blog</a></li>
+				<li><a class="link" href="/now">Now</a></li>
+				<li><a class="link" href="/about">About</a></li>
+				<li><a class="link" href="/micro">Reel</a></li>
+				<li><a class="link" href="/photos">Photos</a></li>
+				<li><a class="link" href="/music">Tunes</a></li>
 			</ul>
 		</div>
 	</nav>
