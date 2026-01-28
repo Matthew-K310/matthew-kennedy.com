@@ -25,8 +25,8 @@ jobs:
       - name: Install templ
         run: go install github.com/a-h/templ/cmd/templ@latest
 
-      # - name: Generate templ
-      #   run: templ generate
+      - name: Generate templ
+        run: templ generate
 
       - name: Generate Step
         run: go generate
