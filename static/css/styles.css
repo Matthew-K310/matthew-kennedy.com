@@ -18,6 +18,16 @@ body {
   margin: 0;
   padding: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem 0;
 }
 header {
   display: flex;
@@ -53,6 +63,10 @@ li {
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  footer {
+    display: none;
   }
 }
 
