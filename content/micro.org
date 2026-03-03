@@ -1,0 +1,9 @@
+#+title: Micro
+* Post once...
+:PROPERTIES:
+:DATE: 2026-03-02 20:35
+:SLUG: posse
+:END:
+I am personally against the [[https://indieweb.org/POSSE][POSSE]] method, as it goes against my principals to support such an evil collective of platforms.
+My posts are here and here alone, and I intend to keep it that way.
+

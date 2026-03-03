@@ -1,21 +1,32 @@
 package pages
 
-import "github.com/Matthew-K310/matthew-kennedy/components"
+import (
+	"github.com/Matthew-K310/matthew-kennedy/components"
+	"github.com/Matthew-K310/matthew-kennedy/internal/micro"
+)
 
-templ Micro() {
+templ Micro(posts []micro.Post) {
 	<!DOCTYPE html>
 	<html lang="en">
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<title>Music | Matthew Kennedy</title>
+			<title>Micro | Matthew Kennedy</title>
 			<link rel="stylesheet" href="/static/css/styles.css"/>
 		</head>
 		<body>
 			@components.Header()
-            @components.NavBar()
-			<h1>Coming soon...</h1>
-			<p>My Instagram and Twitter replacement for short form posts.</p>
+			@components.NavBar()
+			<main class="micro-feed">
+				for _, post := range posts {
+					<article class="micro-post">
+						@templ.Raw(post.Content)
+						<time datetime={ post.Date.Format("2006-01-02T15:04") }>
+							{ post.Date.Format("Jan 2, 2006, 03:04 PM") }
+						</time>
+					</article>
+				}
+			</main>
 			@components.Footer()
 		</body>
 	</html>
