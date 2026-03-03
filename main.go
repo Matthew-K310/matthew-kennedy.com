@@ -32,6 +32,10 @@ func main() {
 	staticFS, _ := fs.Sub(staticFiles, "static")
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.FS(staticFS))))
 
+	// handle content files (micro.org)
+	contentFS, _ := fs.Sub(staticFiles, "content")
+	http.Handle("/content/", http.StripPrefix("/content/", http.FileServer(http.FS(contentFS))))
+
 	fmt.Println("Listening on :3000")
 	http.ListenAndServe(":3000", nil)
 }
