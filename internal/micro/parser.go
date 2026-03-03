@@ -1,7 +1,7 @@
 package micro
 
 import (
-	"os"
+	"io/fs"
 	"time"
 
 	"github.com/niklasfasching/go-org/org"
@@ -14,8 +14,8 @@ type Post struct {
 	Content string
 }
 
-func LoadPosts(path string) ([]Post, error) {
-	f, err := os.Open(path)
+func LoadPosts(fsys fs.FS, path string) ([]Post, error) {
+	f, err := fsys.Open(path)
 	if err != nil {
 		return nil, err
 	}

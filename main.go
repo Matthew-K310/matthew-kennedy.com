@@ -13,11 +13,11 @@ import (
 	"github.com/Matthew-K310/matthew-kennedy/pages"
 )
 
-//go:embed static/css/* static/assets/*
+//go:embed static/css/* static/assets/* content/micro.org
 var staticFiles embed.FS
 
 func main() {
-	posts, err := micro.LoadPosts("content/micro.org")
+	posts, err := micro.LoadPosts(staticFiles, "content/micro.org")
 	if err != nil {
 		log.Fatalf("failed to load micro posts: %v", err)
 	}
