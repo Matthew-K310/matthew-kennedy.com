@@ -1,0 +1,33 @@
+package pages
+
+import "codeberg.org/Matthew-K310/matthew-kennedy/components"
+
+templ Contact() {
+		<!DOCTYPE html>
+		<html lang="en">
+				<head>
+						<meta charset="UTF-8"/>
+						<meta name="viewport" content="width=device-width, initial-scale=1"/>
+						<title>Contact | Matthew Kennedy</title>
+						<link rel="stylesheet" href="/static/css/styles.css"/>
+				</head>
+				<body>
+						@components.Header()
+						@components.NavBar()
+						<div class="text-block">
+								<ul>
+										<li>XMPP - mattken@msg.matthewservers.org</li>
+										<li>IRC - mattken` on irc.libera.chat</li>
+										<li>Email - matthew@matthew-kennedy.com
+												<p> GPG public key:
+														<a href="https://keys.openpgp.org/vks/v1/by-fingerprint/24F1921B42BBA764D9DA185506FFB1C094AF0028">
+																24F1 921B 42BB A764 D9DA 1855 06FF B1C0 94AF 0028
+														</a>
+												</p>
+										</li>
+								</ul>
+						</div>
+						@components.Footer()
+				</body>
+		</html>
+}

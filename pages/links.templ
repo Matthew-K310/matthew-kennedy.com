@@ -1,0 +1,31 @@
+package pages
+
+import "codeberg.org/Matthew-K310/matthew-kennedy/components"
+
+templ Links() {
+		<!DOCTYPE html>
+		<html lang="en">
+				<head>
+						<meta charset="UTF-8"/>
+						<meta name="viewport" content="width=device-width, initial-scale=1"/>
+						<title>Home | Matthew Kennedy</title>
+						<link rel="stylesheet" href="/static/css/styles.css"/>
+				</head>
+				<body>
+						@components.Header()
+						@components.NavBar()
+						<div class="text-block">
+								<h1>Friend's Sites</h1>
+								<a href="https://joshblais.com">Joshua Blais</a>
+								<a href="https://joshblais.com">cashmere</a>
+								<a href="https://linuxmaxxing.com/">Scotty</a>
+								<a href="https://マリウス.com/">Marius (マリウス)</a>
+								<p>
+										While there may not be much right now, I plan to add more interactive and social features to the site in the
+										coming months.
+								</p>
+						</div>
+						@components.Footer()
+				</body>
+		</html>
+}
