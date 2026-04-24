@@ -31,7 +31,7 @@ func Links() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Home | Matthew Kennedy</title><link rel=\"stylesheet\" href=\"/static/css/styles.css\"></head><body>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Links | Matthew Kennedy</title><link rel=\"stylesheet\" href=\"/static/css/styles.css\"></head><body>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -43,7 +43,7 @@ func Links() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"text-block\"><h1>Friend's Sites</h1><a href=\"https://joshblais.com\">Joshua Blais</a> <a href=\"https://joshblais.com\">cashmere</a> <a href=\"https://linuxmaxxing.com/\">Scotty</a> <a href=\"https://マリウス.com/\">Marius (マリウス)</a><p>While there may not be much right now, I plan to add more interactive and social features to the site in the coming months.</p></div>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"text-block\"><h1>Friend's Sites</h1><ul><li><a href=\"https://joshblais.com\">Joshua Blais</a></li><li><a href=\"https://joshblais.com\">cashmere</a></li><li><a href=\"https://linuxmaxxing.com/\">Scotty</a></li><li><a href=\"https://マリウス.com/\">Marius (マリウス)</a></li><li><a href=\"https://joshtronic.com/\">Josh Sherman</a></li></ul><h1>Collections</h1><h2>Reading</h2><h2>Watching</h2><h2>Listening</h2></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
