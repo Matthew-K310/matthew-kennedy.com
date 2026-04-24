@@ -43,7 +43,7 @@ func Contact() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"text-block\"><ul><li>XMPP - mattken@msg.matthewservers.org</li><li>IRC - mattken` on irc.libera.chat</li><li>Email - matthew@matthew-kennedy.com<p>GPG public key: <a href=\"https://keys.openpgp.org/vks/v1/by-fingerprint/24F1921B42BBA764D9DA185506FFB1C094AF0028\">24F1 921B 42BB A764 D9DA 1855 06FF B1C0 94AF 0028</a></p></li></ul></div>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"text-block\"><ul><li>XMPP - mattken@msg.matthewservers.org</li><li>IRC - mattken on irc.libera.chat</li><li>Email - matthew@matthew-kennedy.com<p>GPG public key: <a href=\"https://keys.openpgp.org/vks/v1/by-fingerprint/24F1921B42BBA764D9DA185506FFB1C094AF0028\">24F1 921B 42BB A764 D9DA 1855 06FF B1C0 94AF 0028</a></p></li></ul></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

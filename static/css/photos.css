@@ -1,20 +1,15 @@
 :root,
 [data-theme="dark"] {
-    --bg-color: #212121;
-    --text-color: white;
-    --link-color: PowderBlue;
-}
-
-[data-theme="light"] {
-    --bg-color: #f5f5f5;
-    --text-color: #212121;
-    --link-color: #0066cc;
+    --bg-color: #1a1d21;
+    --text-color: #e0dcd4;
+    --link-color: #b4bcc4;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: sans-serif;
+    font-family: "Iosevka Web", sans-serif;
+	font-size: 110%;
     margin: 0;
     padding: 1rem;
     transition:
