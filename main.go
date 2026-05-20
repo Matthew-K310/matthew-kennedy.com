@@ -9,23 +9,16 @@ import (
 
 	"github.com/a-h/templ"
 
-	//	"github.com/Matthew-K310/matthew-kennedy/internal/micro"
 	"codeberg.org/Matthew-K310/matthew-kennedy/pages"
 )
 
-//go:embed static/css/* static/assets/* static/badges/* content/micro.org
+//go:embed static/css/* static/assets/* static/badges/*
 var staticFiles embed.FS
 
 func main() {
-	// posts, err := micro.LoadPosts(staticFiles, "content/micro.org")
-	// if err != nil {
-	//	log.Fatalf("failed to load micro posts: %v", err)
-	// }
-
 	http.Handle("/", templ.Handler(pages.Home()))
 	http.Handle("/now", templ.Handler(pages.Now()))
 	http.Handle("/about", templ.Handler(pages.About()))
-	// http.Handle("/micro", templ.Handler(pages.Micro(posts)))
 	http.Handle("/photos", templ.Handler(pages.Photos()))
 	http.Handle("/music", templ.Handler(pages.Music()))
 	http.Handle("/contact", templ.Handler(pages.Contact()))
