@@ -43,33 +43,20 @@ func Now() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"text-block\"><header><h1>Now</h1></header><p>You should make a <a href=\"https://nownownow.com/\">Now page</a>.</p><section><div><h2>Projects</h2></div><div><ul><li>Creating a website ")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"text-block\"><header><h1>Now</h1></header><p>You should make a <a href=\"https://nownownow.com/\">Now page</a>.</p><section><div><h2>Projects</h2></div><div><ul><li>Making a game for the <a href=\"https://itch.io/jam/gamedevtv-jam-2026\">GameDev.tv Game Jam</a></li><li>Working on a FOSS, federated Goodreads alternative.</li><li>Hacking on my <a href=\"https://codeberg.org/Matthew-K310/.emacs.d.git\">Emacs configuration.</a></li></ul></div></section><section><div><h2>Reading</h2></div><div><ul><li>Colossians - Bible study</li><li>Ecclesiastes - Bible reading</li><li>Hunger Games<br><a>Suzanne Collins - Science(?) Fiction</a></li></ul></div></section><section><div><h2>Listening</h2></div><div><p>I am a huge music fan, and I've been doing music production off and on since 2020, so music really means a lot to me. These are just a few of the albums I've been enjoying as of late.</p><div><h3>Work & Focus</h3><p>I blame <a href=\"https://joshblais.com/blog/productivity-hack-music/\">Joshua Blais</a> ")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
 		var templ_7745c5c3_Var2 string
 		templ_7745c5c3_Var2, templ_7745c5c3_Err = templ.JoinStringErrs("for")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 28, Col: 42}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 66, Col: 110}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var2))
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, " a crafts business to showcase and sell their handmade goods online.</li><li>Working on a FOSS, federated Goodreads alternative.</li><li>Hacking on my <a href=\"https://codeberg.org/Matthew-K310/.emacs.d.git\"></a> Emacs configuration.</li></ul></div></section><section><div><h2>Reading</h2></div><div><ul><li>Colossians - Bible study</li><li>1 Peter - Bible reading</li><li>Twice Dead King: Ruin<br><a>Nate Crowley - Science Fiction</a></li></ul></div></section><section><div><h2>Listening</h2></div><div><p>I am a huge music fan, and I've been doing music production off and on since 2020, so music really means a lot to me. These are just a few of the albums I've been enjoying as of late.</p><div><h3>Work & Focus</h3><p>I blame <a href=\"https://joshblais.com/blog/productivity-hack-music/\">Joshua Blais</a> ")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		var templ_7745c5c3_Var3 string
-		templ_7745c5c3_Var3, templ_7745c5c3_Err = templ.JoinStringErrs("for")
-		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `pages/now.templ`, Line: 66, Col: 110}
-		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var3))
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, " starting me down this path.</p><ul><li>Warhammer 40,000: Mechanicus OST - Guillaume David</li><li>Melancholia Hymns - Arcane Roots</li></ul></div><div><h3>Leisure Listening</h3><p>Currently rotating through various artists and genres</p><ul><li>Melancolia Hymns - Arcane Roots (I really love this album)</li><li>Persona - half⋅alive</li><li>You're never gone-vocal works - Jay Hosking</li></ul></div></div></section><section><div><h2>Learning</h2></div><div><ul><li>Emacs and Elisp</li></ul></div></section><section><div><h2>Watching</h2></div><ul><li>Severance, Season 2</li><li>24, Season 5</li></ul><div></div></section></div>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, " starting me down this path.</p><ul><li>Katana ZERO (Original Soundtrack)</li><li>FTL: Faster Than Light - Original Soundtrack</li><li>Endless Space 2 - Original Soundtrack</li></ul></div><div><h3>Leisure Listening</h3><ul><li>Halo: Combat Evolved - Original Soundtrack</li><li>Assassins Creed IV: Black Flag - Original Soundtrack</li><li>Hotline Miami 2: Wrong Number Sountrack</li></ul></div></div></section><section><div><h2>Learning</h2></div><div><ul><li>Emacs and Elisp</li><li>Zig</li><li>Raylib (specifically <a href=\"https://github.com/raylib-zig/raylib-zig\">raylib-zig</a>)</li></ul></div></section><section><div><h2>Watching</h2><p>I haven't found modern TV to be all that interesting at this point, so this list will likely be empty for quite some time.</p></div></section><section><div><h2>Playing</h2><p>I've started to get back into gaming in the form of playing some older single-player games that I missed out on when I was younger. These fill the story-hungry void left by modern television.</p></div><div><ul><li>The Mass Effect Trilogy (currently on Mass Effect 2 and am quite enthralled)</li><li>Assassin's Creed IV: Black Flag</li><li>Assassin's Creed III</li><li>Outer Wilds (for the relaxing gaming sessions)</li></ul></div></section></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -77,7 +64,7 @@ func Now() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "</body></html>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "</body></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

@@ -84,35 +84,6 @@ li {
   }
 }
 
-/* micro post styling */
-
-/* .micro-feed { */
-/*   max-width: 600px; */
-/*   margin: 0 auto; */
-/*   padding: 2rem 1rem; */
-/* } */
-
-/* .micro-post { */
-/*   padding: 2rem 0; */
-/*   border-top: 1px solid #e0dcd4; */
-/*   border-bottom: 1px solid #e0dcd4; */
-/*   margin-bottom: -1px; /\* collapse double borders between posts *\/ */
-/* } */
-
-/* .micro-post p { */
-/*   margin: 0 0 0.75rem 0; */
-/*   line-height: 1.6; */
-/* } */
-
-/* .micro-post a { */
-/*   color: inherit; */
-/*   word-break: break-all; */
-/* } */
-
-/* .micro-post time { */
-/*   display: block; */
-/*   font-style: italic; */
-/*   color: #999; */
-/*   font-size: 0.875rem; */
-/*   margin-top: 0.5rem; */
-/* } */
+.badges {
+	margin: 15px;
+}

@@ -13,7 +13,7 @@ import (
 	"codeberg.org/Matthew-K310/matthew-kennedy/pages"
 )
 
-//go:embed static/css/* static/assets/* content/micro.org
+//go:embed static/css/* static/assets/* static/badges/* content/micro.org
 var staticFiles embed.FS
 
 func main() {
